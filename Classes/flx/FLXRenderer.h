@@ -1,7 +1,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
-#import "FLXTexture.h"
+#import "FLXTextureTest.h"
 
 @interface FLXRenderer : NSObject
 {
@@ -15,7 +15,7 @@
     // The OpenGL ES names for the framebuffer and renderbuffer used to render to this view
     GLuint defaultFramebuffer, colorRenderbuffer;
 	
-	FLXTexture *texture;
+	FLXTextureTest *texture;
 }
 
 - (void)render;

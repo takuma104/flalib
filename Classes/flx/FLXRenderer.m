@@ -24,8 +24,7 @@
 
 
 		
-		texture = [[FLXTexture alloc] initWithCGImage:
-				   [[UIImage imageNamed:@"test256x256.png"] CGImage]];
+		texture = [[FLXTextureTest alloc] init];
 	}
 
     return self;
@@ -98,10 +97,8 @@
 	glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 	glEnable(GL_BLEND);
 
-	static float rad = 0.f;
-	rad += 0.1f;
-	
-	[texture draw:30.f+40.f*cosf(rad) :sinf(rad)*100.f+110.f];
+	[texture testFill];
+	[texture draw:0 :0];
 	
 	glDisable(GL_TEXTURE_2D);						
 	glDisableClientState(GL_COLOR_ARRAY);			
