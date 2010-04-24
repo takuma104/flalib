@@ -21,7 +21,12 @@
         glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
-    }
+
+
+		
+		texture = [[FLXTexture alloc] initWithCGImage:
+				   [[UIImage imageNamed:@"test256x256.png"] CGImage]];
+	}
 
     return self;
 }
@@ -67,18 +72,16 @@
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	
-///	float w = backingWidth / 2;
 	float h = backingHeight / 2;
 	
 	glTranslatef(0,h,0);
 	glRotatef(180,1,0,0);
 	glTranslatef(0,-h,0);
 	
-	
 
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
-
+/*
     glVertexPointer(2, GL_FLOAT, 0, squareVertices);
     glEnableClientState(GL_VERTEX_ARRAY);
     glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
@@ -86,6 +89,25 @@
 
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
+*/
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_COLOR_ARRAY);
+	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+	glEnable(GL_TEXTURE_2D);	
+	
+	glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+	glEnable(GL_BLEND);
+
+	static float rad = 0.f;
+	rad += 0.1f;
+	
+	[texture draw:30.f+40.f*cosf(rad) :sinf(rad)*100.f+110.f];
+	
+	glDisable(GL_TEXTURE_2D);						
+	glDisableClientState(GL_COLOR_ARRAY);			
+	glDisableClientState(GL_TEXTURE_COORD_ARRAY);	
+	glDisableClientState(GL_VERTEX_ARRAY);			
+	
     // This application only creates a single color renderbuffer which is already bound at this point.
     // This call is redundant, but needed if dealing with multiple renderbuffers.
     glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
@@ -129,6 +151,7 @@
     [context release];
     context = nil;
 
+	[texture release];
     [super dealloc];
 }
 

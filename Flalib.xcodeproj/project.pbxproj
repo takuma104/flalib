@@ -24,6 +24,7 @@
 		F1C4D1EE1183040100227473 /* FLBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1ED1183040100227473 /* FLBitmap.m */; };
 		F1C4D20F11830AC600227473 /* FLBitmapData.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D20E11830AC600227473 /* FLBitmapData.m */; };
 		F1C4D2521183364200227473 /* FLXTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D2511183364200227473 /* FLXTexture.m */; };
+		F1C4D2951183419C00227473 /* test256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C4D2941183419C00227473 /* test256x256.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		F1C4D20E11830AC600227473 /* FLBitmapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBitmapData.m; sourceTree = "<group>"; };
 		F1C4D2501183364200227473 /* FLXTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXTexture.h; sourceTree = "<group>"; };
 		F1C4D2511183364200227473 /* FLXTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXTexture.m; sourceTree = "<group>"; };
+		F1C4D2941183419C00227473 /* test256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test256x256.png; path = resources/test256x256.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F1C4D2941183419C00227473 /* test256x256.png */,
 				8D1107310486CEB800E47090 /* Flalib-Info.plist */,
 			);
 			name = Resources;
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C4D2951183419C00227473 /* test256x256.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
