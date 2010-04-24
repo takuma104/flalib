@@ -16,6 +16,14 @@
 		F1C4D10B1182F8F000227473 /* FLXRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1091182F8F000227473 /* FLXRenderer.m */; };
 		F1C4D1551182F9DC00227473 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C4D1541182F9DC00227473 /* OpenGLES.framework */; };
 		F1C4D17F1182F9FF00227473 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C4D17E1182F9FF00227473 /* QuartzCore.framework */; };
+		F1C4D1BC1182FCB100227473 /* FLPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1BB1182FCB100227473 /* FLPoint.m */; };
+		F1C4D1E01182FE1100227473 /* FLRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1DF1182FE1100227473 /* FLRectangle.m */; };
+		F1C4D1E51183036700227473 /* FLDisplayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1E41183036700227473 /* FLDisplayObject.m */; };
+		F1C4D1E8118303D600227473 /* FLDisplayObjectContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1E7118303D600227473 /* FLDisplayObjectContainer.m */; };
+		F1C4D1EB118303E300227473 /* FLSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1EA118303E300227473 /* FLSprite.m */; };
+		F1C4D1EE1183040100227473 /* FLBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D1ED1183040100227473 /* FLBitmap.m */; };
+		F1C4D20F11830AC600227473 /* FLBitmapData.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D20E11830AC600227473 /* FLBitmapData.m */; };
+		F1C4D2521183364200227473 /* FLXTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D2511183364200227473 /* FLXTexture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,24 @@
 		F1C4D1091182F8F000227473 /* FLXRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXRenderer.m; sourceTree = "<group>"; };
 		F1C4D1541182F9DC00227473 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		F1C4D17E1182F9FF00227473 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F1C4D1B91182FC8A00227473 /* flalib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flalib.h; sourceTree = "<group>"; };
+		F1C4D1BA1182FCB100227473 /* FLPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPoint.h; sourceTree = "<group>"; };
+		F1C4D1BB1182FCB100227473 /* FLPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPoint.m; sourceTree = "<group>"; };
+		F1C4D1BD1182FD3700227473 /* flalib_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flalib_common.h; sourceTree = "<group>"; };
+		F1C4D1DE1182FE1100227473 /* FLRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLRectangle.h; sourceTree = "<group>"; };
+		F1C4D1DF1182FE1100227473 /* FLRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLRectangle.m; sourceTree = "<group>"; };
+		F1C4D1E31183036700227473 /* FLDisplayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDisplayObject.h; sourceTree = "<group>"; };
+		F1C4D1E41183036700227473 /* FLDisplayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDisplayObject.m; sourceTree = "<group>"; };
+		F1C4D1E6118303D600227473 /* FLDisplayObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDisplayObjectContainer.h; sourceTree = "<group>"; };
+		F1C4D1E7118303D600227473 /* FLDisplayObjectContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDisplayObjectContainer.m; sourceTree = "<group>"; };
+		F1C4D1E9118303E300227473 /* FLSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSprite.h; sourceTree = "<group>"; };
+		F1C4D1EA118303E300227473 /* FLSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSprite.m; sourceTree = "<group>"; };
+		F1C4D1EC1183040100227473 /* FLBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBitmap.h; sourceTree = "<group>"; };
+		F1C4D1ED1183040100227473 /* FLBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBitmap.m; sourceTree = "<group>"; };
+		F1C4D20D11830AC600227473 /* FLBitmapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBitmapData.h; sourceTree = "<group>"; };
+		F1C4D20E11830AC600227473 /* FLBitmapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBitmapData.m; sourceTree = "<group>"; };
+		F1C4D2501183364200227473 /* FLXTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXTexture.h; sourceTree = "<group>"; };
+		F1C4D2511183364200227473 /* FLXTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXTexture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +81,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F1C4D1B81182FC8A00227473 /* fl */,
 				F1C4D1051182F8F000227473 /* flx */,
 				1D3623240D0F684500981E51 /* FlalibAppDelegate.h */,
 				1D3623250D0F684500981E51 /* FlalibAppDelegate.m */,
@@ -118,8 +145,33 @@
 				F1C4D1071182F8F000227473 /* FLXGLView.m */,
 				F1C4D1081182F8F000227473 /* FLXRenderer.h */,
 				F1C4D1091182F8F000227473 /* FLXRenderer.m */,
+				F1C4D2501183364200227473 /* FLXTexture.h */,
+				F1C4D2511183364200227473 /* FLXTexture.m */,
 			);
 			path = flx;
+			sourceTree = "<group>";
+		};
+		F1C4D1B81182FC8A00227473 /* fl */ = {
+			isa = PBXGroup;
+			children = (
+				F1C4D1B91182FC8A00227473 /* flalib.h */,
+				F1C4D1BD1182FD3700227473 /* flalib_common.h */,
+				F1C4D1BA1182FCB100227473 /* FLPoint.h */,
+				F1C4D1BB1182FCB100227473 /* FLPoint.m */,
+				F1C4D1DE1182FE1100227473 /* FLRectangle.h */,
+				F1C4D1DF1182FE1100227473 /* FLRectangle.m */,
+				F1C4D1E31183036700227473 /* FLDisplayObject.h */,
+				F1C4D1E41183036700227473 /* FLDisplayObject.m */,
+				F1C4D1E6118303D600227473 /* FLDisplayObjectContainer.h */,
+				F1C4D1E7118303D600227473 /* FLDisplayObjectContainer.m */,
+				F1C4D1E9118303E300227473 /* FLSprite.h */,
+				F1C4D1EA118303E300227473 /* FLSprite.m */,
+				F1C4D1EC1183040100227473 /* FLBitmap.h */,
+				F1C4D1ED1183040100227473 /* FLBitmap.m */,
+				F1C4D20D11830AC600227473 /* FLBitmapData.h */,
+				F1C4D20E11830AC600227473 /* FLBitmapData.m */,
+			);
+			path = fl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +230,14 @@
 				1D3623260D0F684500981E51 /* FlalibAppDelegate.m in Sources */,
 				F1C4D10A1182F8F000227473 /* FLXGLView.m in Sources */,
 				F1C4D10B1182F8F000227473 /* FLXRenderer.m in Sources */,
+				F1C4D1BC1182FCB100227473 /* FLPoint.m in Sources */,
+				F1C4D1E01182FE1100227473 /* FLRectangle.m in Sources */,
+				F1C4D1E51183036700227473 /* FLDisplayObject.m in Sources */,
+				F1C4D1E8118303D600227473 /* FLDisplayObjectContainer.m in Sources */,
+				F1C4D1EB118303E300227473 /* FLSprite.m in Sources */,
+				F1C4D1EE1183040100227473 /* FLBitmap.m in Sources */,
+				F1C4D20F11830AC600227473 /* FLBitmapData.m in Sources */,
+				F1C4D2521183364200227473 /* FLXTexture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
