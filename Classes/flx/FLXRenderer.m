@@ -22,10 +22,6 @@
         glBindFramebufferOES(GL_FRAMEBUFFER_OES, defaultFramebuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, colorRenderbuffer);
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, colorRenderbuffer);
-
-
-		
-		texture = [[FLXTextureTest alloc] init];
 	}
 
     return self;
@@ -113,7 +109,6 @@
     [context release];
     context = nil;
 
-	[texture release];
     [super dealloc];
 }
 
