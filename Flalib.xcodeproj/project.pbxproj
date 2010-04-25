@@ -28,6 +28,9 @@
 		F1C4D3BE11835CB800227473 /* FLXTextureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D3BD11835CB800227473 /* FLXTextureTest.m */; };
 		F1C4D45911844D8700227473 /* FLStage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D45811844D8700227473 /* FLStage.m */; };
 		F1C4D46A1184512E00227473 /* TestSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D4691184512E00227473 /* TestSprite.m */; };
+		F1C4D50411845BCB00227473 /* FLGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D50311845BCB00227473 /* FLGraphics.m */; };
+		F1C4D50711845CDC00227473 /* FLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D50611845CDC00227473 /* FLMatrix.m */; };
+		F1C4D53011847F7600227473 /* FLShape.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D52F11847F7600227473 /* FLShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,12 @@
 		F1C4D45811844D8700227473 /* FLStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLStage.m; sourceTree = "<group>"; };
 		F1C4D4681184512E00227473 /* TestSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSprite.h; sourceTree = "<group>"; };
 		F1C4D4691184512E00227473 /* TestSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSprite.m; sourceTree = "<group>"; };
+		F1C4D50211845BCB00227473 /* FLGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLGraphics.h; sourceTree = "<group>"; };
+		F1C4D50311845BCB00227473 /* FLGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLGraphics.m; sourceTree = "<group>"; };
+		F1C4D50511845CDC00227473 /* FLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMatrix.h; sourceTree = "<group>"; };
+		F1C4D50611845CDC00227473 /* FLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMatrix.m; sourceTree = "<group>"; };
+		F1C4D52E11847F7600227473 /* FLShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLShape.h; sourceTree = "<group>"; };
+		F1C4D52F11847F7600227473 /* FLShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +196,12 @@
 				F1C4D20E11830AC600227473 /* FLBitmapData.m */,
 				F1C4D45711844D8700227473 /* FLStage.h */,
 				F1C4D45811844D8700227473 /* FLStage.m */,
+				F1C4D50211845BCB00227473 /* FLGraphics.h */,
+				F1C4D50311845BCB00227473 /* FLGraphics.m */,
+				F1C4D50511845CDC00227473 /* FLMatrix.h */,
+				F1C4D50611845CDC00227473 /* FLMatrix.m */,
+				F1C4D52E11847F7600227473 /* FLShape.h */,
+				F1C4D52F11847F7600227473 /* FLShape.m */,
 			);
 			path = fl;
 			sourceTree = "<group>";
@@ -268,6 +283,9 @@
 				F1C4D3BE11835CB800227473 /* FLXTextureTest.m in Sources */,
 				F1C4D45911844D8700227473 /* FLStage.m in Sources */,
 				F1C4D46A1184512E00227473 /* TestSprite.m in Sources */,
+				F1C4D50411845BCB00227473 /* FLGraphics.m in Sources */,
+				F1C4D50711845CDC00227473 /* FLMatrix.m in Sources */,
+				F1C4D53011847F7600227473 /* FLShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

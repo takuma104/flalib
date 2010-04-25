@@ -1,4 +1,5 @@
 #import "FLBitmapData.h"
+#import "FLGraphics.h"
 
 static unsigned int nextPOT(unsigned int x)
 {
@@ -48,6 +49,9 @@ static unsigned int nextPOT(unsigned int x)
 											   _textureWidth*_bpp, 
 											   cs, 
 											   bi);
+		CGContextSetFillColorSpace(_bitmapContext, cs); 
+		CGContextSetStrokeColorSpace(_bitmapContext, cs); 
+		
 		CGColorSpaceRelease(cs);
 		_dirty = YES;
 	}
@@ -78,6 +82,13 @@ static unsigned int nextPOT(unsigned int x)
 	[super dealloc];
 }
 
+- (void)draw:(FLShape*)shape {
+	FLGraphics *g = shape.graphics;
+	[g _drawWithContext:_bitmapContext];
+	_dirty = YES;
+}
+
+
 - (FLRectangle*)rect {
 	return [FLRectangle rectangle :0 :0 :_width :_height];
 }
@@ -100,6 +111,10 @@ static unsigned int nextPOT(unsigned int x)
 + (FLBitmapData*)bitmapDataWithUIImage:(UIImage*)image {
 	return [[[[self class] alloc] initWithUIImage:image] autorelease];
 }
+
+
+#pragma mark ForInternalUseOnly
+#pragma mark -
 
 - (int)_textureWidth {
 	return _textureWidth;

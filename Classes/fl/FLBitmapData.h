@@ -1,5 +1,6 @@
 #import "flalib_common.h"
 #import "FLRectangle.h"
+#import "FLShape.h"
 
 @interface FLBitmapData : NSObject {
 	int _width;
@@ -26,6 +27,7 @@
 @property (readonly, nonatomic) FLBoolean transparent;
 
 - (FLRectangle*)rect;
+- (void)draw:(FLShape*)shape;
 
 /// for internal use only
 - (int)_textureWidth;
