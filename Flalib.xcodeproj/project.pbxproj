@@ -26,6 +26,8 @@
 		F1C4D2521183364200227473 /* FLXTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D2511183364200227473 /* FLXTexture.m */; };
 		F1C4D2951183419C00227473 /* test256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C4D2941183419C00227473 /* test256x256.png */; };
 		F1C4D3BE11835CB800227473 /* FLXTextureTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D3BD11835CB800227473 /* FLXTextureTest.m */; };
+		F1C4D45911844D8700227473 /* FLStage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D45811844D8700227473 /* FLStage.m */; };
+		F1C4D46A1184512E00227473 /* TestSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C4D4691184512E00227473 /* TestSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		F1C4D2941183419C00227473 /* test256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test256x256.png; path = resources/test256x256.png; sourceTree = "<group>"; };
 		F1C4D3BC11835CB800227473 /* FLXTextureTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXTextureTest.h; sourceTree = "<group>"; };
 		F1C4D3BD11835CB800227473 /* FLXTextureTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXTextureTest.m; sourceTree = "<group>"; };
+		F1C4D45711844D8700227473 /* FLStage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLStage.h; sourceTree = "<group>"; };
+		F1C4D45811844D8700227473 /* FLStage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLStage.m; sourceTree = "<group>"; };
+		F1C4D4681184512E00227473 /* TestSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSprite.h; sourceTree = "<group>"; };
+		F1C4D4691184512E00227473 /* TestSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F1C4D4671184512300227473 /* samples */,
 				F1C4D1B81182FC8A00227473 /* fl */,
 				F1C4D1051182F8F000227473 /* flx */,
 				1D3623240D0F684500981E51 /* FlalibAppDelegate.h */,
@@ -178,8 +185,19 @@
 				F1C4D1ED1183040100227473 /* FLBitmap.m */,
 				F1C4D20D11830AC600227473 /* FLBitmapData.h */,
 				F1C4D20E11830AC600227473 /* FLBitmapData.m */,
+				F1C4D45711844D8700227473 /* FLStage.h */,
+				F1C4D45811844D8700227473 /* FLStage.m */,
 			);
 			path = fl;
+			sourceTree = "<group>";
+		};
+		F1C4D4671184512300227473 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				F1C4D4681184512E00227473 /* TestSprite.h */,
+				F1C4D4691184512E00227473 /* TestSprite.m */,
+			);
+			path = samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +266,8 @@
 				F1C4D20F11830AC600227473 /* FLBitmapData.m in Sources */,
 				F1C4D2521183364200227473 /* FLXTexture.m in Sources */,
 				F1C4D3BE11835CB800227473 /* FLXTextureTest.m in Sources */,
+				F1C4D45911844D8700227473 /* FLStage.m in Sources */,
+				F1C4D46A1184512E00227473 /* TestSprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

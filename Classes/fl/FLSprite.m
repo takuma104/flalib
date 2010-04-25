@@ -3,7 +3,7 @@
 @implementation FLSprite
 
 + (FLSprite*)sprite {
-	return [[[FLSprite alloc] init] autorelease];
+	return [[[[self class] alloc] init] autorelease];
 }
 
 @end

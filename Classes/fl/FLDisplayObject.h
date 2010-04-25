@@ -23,6 +23,9 @@
 @property (readwrite, nonatomic) FLNumber scaleY;
 @property (readwrite, nonatomic) FLNumber rotation;
 
-- (void)render;
+/// for internal use only
+- (void)_prepareTexture;
+- (void)_render;
+
 
 @end

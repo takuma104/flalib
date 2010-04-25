@@ -23,9 +23,19 @@
 	[_children removeObject:child];
 }
 
-- (void)render {
+
+#pragma mark ForInternalUseOnly
+#pragma mark -
+
+- (void)_prepareTexture {
 	for (FLDisplayObject *c in _children) {
-		[c render];
+		[c _prepareTexture];
+	}
+}
+
+- (void)_render {
+	for (FLDisplayObject *c in _children) {
+		[c _render];
 	}
 }
 

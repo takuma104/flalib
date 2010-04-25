@@ -3,6 +3,7 @@
 #import "FLBitmapData.h"
 
 @interface FLBitmap : FLDisplayObject {
+	GLuint _name;
 	FLBitmapData *_bitmapData;
 	NSString *_pixelSnapping;
 	FLBoolean _smoothing;
